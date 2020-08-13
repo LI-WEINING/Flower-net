@@ -1,0 +1,25 @@
+body{
+    width: 100%;
+    padding: 0;
+    margin: 0 auto;
+    font-size: 14px;
+    color: #232628;
+    font-family: "Microsoft Yahei", "微软雅黑", verdana;
+    -webkit-tap-highlight-color: transparent;
+    -webkit-font-smoothing: antialiased;
+    min-width: 1200px;
+}
+html,body,ul,p,h1,h2,h3,h4,h5,h6,dl,dt,dd,form,fieldset,legend,table,ol,li,th,td,tr,colgroup,caption,input,button{margin: 0;padding: 0; box-sizing: border-box;}
+div{box-sizing: border-box;}
+i,em{font-style: normal;}
+b,strong{font-weight: normal;}
+img{vertical-align: middle; border: none;}
+a{text-decoration: none;}
+li{list-style: none;}
+button{outline: none;}
+.float-l{float: left;}
+.float-r{float: right;}
+.no-wrap{white-space: nowrap; overflow: hidden; text-overflow: ellipsis;} /* 文字溢出省略号 */
+.clear-all::before{content: '';display: block; overflow: hidden;clear: both; height: 0; visibility: hidden;}
+.clear-all{zoom: 1;}
+.type-area{width: 1200px; margin: 0 auto;}
