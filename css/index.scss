@@ -241,6 +241,12 @@
         .us-phone,.us-line-service{
             height: 36px;
             display: inline-block;
+            a{
+                color: #71797F;
+                &:hover{
+                    color: #ff6a00;
+                }
+            }
         }
         .us-phone{
             .icon-us-phone{
@@ -469,16 +475,22 @@
     .main-server1{
         margin-left: 0;
     }
-    ul li span{
-        width: 24px;
-        height: 24px;
-        margin-top: 18px;
-        margin-left: 2px;
-        margin-right: 6px;
-        display: inline-block;
-        background-image: url(../image/common_sprite.png);
-        background-repeat: no-repeat;
-        vertical-align: top;
+    ul li{
+        cursor: pointer;
+        span{
+            width: 24px;
+            height: 24px;
+            margin-top: 18px;
+            margin-left: 2px;
+            margin-right: 6px;
+            display: inline-block;
+            background-image: url(../image/common_sprite.png);
+            background-repeat: no-repeat;
+            vertical-align: top;
+        }
+    }
+    ul li:hover{
+        color: #FF734C;
     }
     .icon-nb1{
         background-position: -102px -102px;
@@ -537,6 +549,9 @@
                         z-index: 1;
                     }
                     .festival-item-name {
+                        &:hover{
+                            color: #FF734C;
+                        }
                         margin-top: 22px;
                         color: #232628;
                         font-size: 16px;
@@ -617,8 +632,757 @@
     }
 }
 
+// 商品模块背景颜色
+.color-one{
+    background-color: #F7F9FA
+}
+.color-two{
+    background-color: #E9ECF0
+}
+
+// (爱情鲜花|送长辈鲜花|永生花|蛋糕|礼品|晒单评价) --- 标题模板
+.hua-template-box{
+    .hua-distance{
+        width: 1200px;
+        margin: 0 auto;
+        padding: 40px 0 60px;
+        .more-lovehua{
+            font-size: 14px;
+            line-height: 30px;
+            color: #71797F;
+            float: right;
+            .icon-jtl{
+                width: 12px;
+                height: 12px;
+                margin-top: 9px;
+                margin-left: 6px;
+                display: inline-block;
+                background-image: url(../image/common_sprite.png);
+                background-repeat: no-repeat;
+                vertical-align: top;
+                background-position: -68px 0;
+            }
+        }
+        h3{
+            font-size: 26px;
+            line-height: 30px;
+            color: #232628;
+            font-weight: bold;
+            a{
+                color: #232628;
+                &:hover{
+                    color: #FF734C;
+                }
+            }
+            span{
+                padding-left: 15px;
+                margin-left: 16px;
+                font-size: 20px;
+                line-height: 24px;
+                font-weight: normal;
+                border-left: 1px solid #71797F;
+            }
+        }
+        .hua-commodity-box{
+            padding-top: 14px;
+            overflow: hidden;
+        }
+    }
+}
+
+// (爱情鲜花|送长辈鲜花|永生花) --- 商品样式
+.hua-kind{
+    padding-top: 14px;
+    overflow: hidden;
+    .hua-spl{
+        float: left;
+        width: 288px;
+        vertical-align: top;
+        .hua-spl-pos{
+            position: relative;
+            a img{
+                width: 100%;
+            }
+            .link-cover{
+                position: absolute;
+                bottom: 0;
+                left: 0;
+                right: 0;
+                height: 160px;
+                background-image: url(../image/home_linkcover.png);
+                a{
+                    box-sizing: border-box;
+                    display: block;
+                    width: 240px;
+                    height: 60px;
+                    margin: 74px auto 0;
+                    border: 2px solid #fff;
+                    border: 2px solid rgba(255, 255, 255, 0.7);
+                    font-size: 22px;
+                    line-height: 56px;
+                    color: #fff;
+                    font-weight: bold;
+                    text-align: center;
+                    .icon-dotarrow{
+                        background-position: 0 -72px;
+                        width: 20px;
+                        height: 20px;
+                        margin-top: 18px;
+                        margin-left: 12px;
+                        display: inline-block;
+                        background-image: url(../image/common_sprite.png);
+                        background-repeat: no-repeat;
+                        vertical-align: top;
+                    }
+                }
+            }
+        }
+    }
+    .fl-products{
+        float: left;
+        width: 912px;
+        vertical-align: top;
+        .hua-commodity-item{
+            float: left;
+            width: 212px;
+            height: 319.8px;
+            background-color: #FF734C;
+            margin-left: 16px;
+            margin-bottom: 16px;
+            background-color: #fff;
+            vertical-align: top;
+            a{
+                &:hover img{
+                    -webkit-transition-duration: 0.8s;
+                    -o-transition-duration: 0.8s;
+                    transition-duration: 0.8s;
+                    -webkit-transform: scale(1.08, 1.08);
+                    -ms-transform: scale(1.08, 1.08);
+                    transform: scale(1.08, 1.08);
+                }
+                &:hover .product-content{
+                    color: #FF734C !important;
+                }
+                &:hover .product-sell{
+                    color: #FF734C !important;
+                }
+                .img-box{
+                    width: 100%;
+                    height: 228px;
+                    overflow: hidden;
+                    img{
+                        width: 100%;
+                        max-width: 100%;
+                        height: auto;
+                        vertical-align: bottom;
+                        text-decoration: none;
+                    }
+                }
+                .product-content{
+                    padding: 10px 8px 14px;
+                    text-align: center;
+                    color: #232628;
+                    .product-title{
+                        max-width: 100%;
+                        overflow: hidden;
+                        -o-text-overflow: ellipsis;
+                        text-overflow: ellipsis;
+                        white-space: nowrap;
+                        font-size: 16px;
+                        line-height: 20px;
+                    }
+                    .product-price{
+                        margin-top: 5px;
+                        font-size: 16px;
+                        font-weight: bold;
+                        line-height: 20px;
+                    }
+                    .product-sell{
+                        margin-top: 6px;
+                        font-size: 12px;
+                        color: #71797F;
+                        line-height: 16px;
+                    }
+                }
+            }
+            
+        }
+    }
+}
+
+// (蛋糕|礼品|晒单评价)商品样式模板
+.fl-products-row{
+    width: 1216px;
+    position: relative;
+    left: -8px;
+}
+.other-kind .fl-products li{
+    width: 227px;
+    padding: 8px 8px 0;
+    margin: 16px 8px 0;
+    border-radius: 8px;
+    background-color: #fff;
+    vertical-align: top;
+    a{
+        &:hover img{
+            -webkit-transition-duration: 0.8s;
+            -o-transition-duration: 0.8s;
+            transition-duration: 0.8s;
+            -webkit-transform: scale(1.08, 1.08);
+            -ms-transform: scale(1.08, 1.08);
+            transform: scale(1.08, 1.08);
+        }
+        &:hover .product-content{
+            color: #FF734C !important;
+        }
+        &:hover .product-sell{
+            color: #FF734C !important;
+        }
+        .img-box{
+            width: 100%;
+            height: 228px;
+            overflow: hidden;
+            border-radius: 4px;
+            img{
+                width: 100%;
+                max-width: 100%;
+                height: auto;
+                vertical-align: bottom;
+                text-decoration: none;
+            }
+        }
+        .product-content{
+            padding: 10px 8px 14px;
+            text-align: center;
+            color: #232628;
+            .product-title{
+                max-width: 100%;
+                overflow: hidden;
+                -o-text-overflow: ellipsis;
+                text-overflow: ellipsis;
+                white-space: nowrap;
+                font-size: 16px;
+                line-height: 20px;
+            }
+            .product-price{
+                margin-top: 5px;
+                font-size: 16px;
+                font-weight: bold;
+                line-height: 20px;
+            }
+            .product-sell{
+                margin-top: 6px;
+                font-size: 12px;
+                color: #71797F;
+                line-height: 16px;
+            }
+        }
+    }
+}
+
+// 蛋糕 --- 商品样式
+.cake-box{
+    overflow: hidden;
+    .arae-box{
+        height: 320px;
+        width: 1200px;
+        margin: 0 auto;
+        padding: 16px 0 28px;
+        background-color: #fff;
+        box-sizing: content-box;
+        // 地区导航栏
+        .arae-box-nav{
+            height: 48px;
+            .cake-title-box{
+                width: 288px;
+                height: 48px;
+                float: left;
+                padding-left: 24px;
+                font-size: 18px;
+                line-height: 48px;
+                background-color: #FF734C;
+                background: -webkit-gradient(linear, left top, right top, from(#ff734c), to(#ff3d12));
+                background: -webkit-linear-gradient(left, #ff734c 0%, #ff3d12 100%);
+                background: -o-linear-gradient(left, #ff734c 0%, #ff3d12 100%);
+                background: linear-gradient(90deg, #ff734c 0%, #ff3d12 100%);
+                border-radius: 0 100px 100px 0;
+                color: #fff;
+                .icon-city-home{
+                    width: 16px;
+                    height: 16px;
+                    margin-top: 16px;
+                    margin-right: 8px;
+                    background-position: -26px -46px;
+                    display: inline-block;
+                    background-image: url(../image/common_sprite.png);
+                    background-repeat: no-repeat;
+                    vertical-align: top;
+                }
+                .cake-title-pla{
+                    position: relative;
+                    display: inline-block;
+                    margin-left: 42px;
+                    vertical-align: top;
+                    font-size: 16px;
+                    font-weight: bold;
+                    line-height: 48px;
+                    cursor: pointer;
+                    &:hover  .icon-city-arrow{
+                        transform: rotate(90deg);
+                    }
+                    &:hover  .city-sele-box{
+                        display: block;
+                    }
+                    // 城市选择框
+                    .city-sele-box{
+                        display: none;
+                        position: absolute;
+                        top: 100%;
+                        left: -20px;
+                        z-index: 1000;
+                        background: #fff;
+                        overflow: hidden;
+                        color: #232628;
+                        .city-sele{
+                            height: 386px;
+                            font-size: 12px;
+                            width: 384px;
+                            padding: 0;
+                            border: 2px solid #ff6a00;
+                        }
+                    }
+                }
+                .icon-city-arrow{
+                    width: 14px;
+                    height: 14px;
+                    margin-top: 18px;
+                    margin-left: 10px;
+                    background-position: 0 0;
+                    -webkit-transition: -webkit-transform 0.2s;
+                    transition: -webkit-transform 0.2s;
+                    -o-transition: transform 0.2s;
+                    transition: transform 0.2s;
+                    transition: transform 0.2s, -webkit-transform 0.2s;
+                    display: inline-block;
+                    background-image: url(../image/common_sprite.png);
+                    background-repeat: no-repeat;
+                    vertical-align: top;
+                }
+            }
+            .nav-some-area{
+                margin-left: 288px;
+                padding-left: 20px;
+                li{
+                    float: left;
+                    margin: 0 12px;
+                    font-size: 16px;
+                    line-height: 48px;
+                    a{
+                        color: #232628;
+                        &:hover{
+                            color: #FF734C;
+                        }
+                    }
+                }
+            }
+        }
+        // 蛋糕品牌选择
+        .cake-brand-box{
+            padding-top: 16px;
+            ul li{
+                float: left;
+                width: 168px;
+                height: 124px;
+                margin-bottom: 4px;
+                text-align: center;
+                color: #71797F;
+                margin-left: 4px;
+                cursor: pointer;
+                &:hover p{
+                    color: #ff6a00;
+                }
+                img{
+                    width: 108px;
+                    height: 60px;
+                    margin-top: 24px;
+                    vertical-align: middle;
+                }
+                p{
+                    margin-top: 6px;
+                    font-size: 12px;
+                    line-height: 16px;
+                }
+            }
+            .no-margin-l{
+                margin-left: 0px;
+            }
+        }
+    }
+}
+
+// 礼品 --- 商品样式
+.gift-box{
+    padding: 14px 0;
+    background-color: #fff;
+    border-radius: 8px;
+    overflow: hidden;
+    .gift-nav{
+        overflow: hidden;
+        padding-left: 12px;
+        li{
+            float: left;
+            padding: 0 10px;
+            font-size: 14px;
+            line-height: 18px;
+            a{
+                color: #71797F;
+                &:hover{
+                    color: #ff6a00;
+                }
+            }
+        }
+    }
+    .gift-brand-nav{
+        margin-top: 22px;
+        padding-left: 26px;
+        color: #71797F;
+        li{
+            display: inline-block;
+            width: 116px;
+            margin-right: 50px;
+            margin-bottom: 6px;
+            text-align: center;
+            a{
+                color: #71797f;
+                &:hover{
+                    color: #ff6a00;
+                }
+                img{
+                    width: 100%;
+                    vertical-align: middle;
+                }
+                p{
+                    margin-top: 4px;
+                    font-size: 12px;
+                    line-height: 16px;
+                }
+            }
+        }
+    }
+}
+
+// 晒单评价 --- 样式
+.evaluation-list{
+    width: 1216px;
+    position: relative;
+    left: -8px;
+    li{
+        float: left;
+        width: 288px;
+        height: 176px;
+        margin: 0 8px 8px;
+        padding: 8px;
+        color: #232628;
+        background-color: #fff;
+        border-radius: 8px;
+        a{
+            color: #231628;
+            &:hover{
+                color: #ff734c;
+            }
+            .evaluation-l{
+                float: left;
+                width: 154px;
+                height: 100%;
+                padding: 8px;
+                vertical-align: top;
+                .user-pj{
+                    overflow: hidden;
+                    img{
+                        float: left;
+                        width: 24px;
+                        height: 24px;
+                        border-radius: 50%;
+                        vertical-align: top;
+                    }
+                    span{
+                        float: left;
+                        width: 102px;
+                        font-size: 12px;
+                        color: #71797F;
+                        line-height: 24px;
+                        padding-left: 12px;
+                        overflow: hidden;
+                        -o-text-overflow: ellipsis;
+                        text-overflow: ellipsis;
+                        white-space: nowrap;
+                        vertical-align: top;
+                    }
+                }
+                .content-box{
+                    position: relative;
+                    width: 100%;
+                    height: 120px;
+                    padding-top: 8px;
+                    .content-top{
+                        height: 60px;
+                        font-size: 14px;
+                        line-height: 20px;
+                        overflow: hidden;
+                        display: -webkit-box;
+                        -o-text-overflow: ellipsis;
+                        text-overflow: ellipsis;
+                        -webkit-box-orient: vertical;
+                        -webkit-line-clamp: 3;
+                        white-space: normal;
+                    }
+                    .content-area{
+                        position: absolute;
+                        left: 0;
+                        bottom: 0;
+                        p{
+                            font-size: 12px;
+                            color: #B4BABF;
+                        }
+                    }
+                }
+            }
+            .evaluation-r{
+                float: left;
+                width: 118px;
+                height: 160px;
+                border-radius: 8px;
+                overflow: hidden;
+                vertical-align: top;
+                line-height: 160px;
+                text-align: center;
+                img{
+                    display: inline-block;
+                    vertical-align: middle;
+                    max-width: 102%;
+                    max-height: 100%;
+                }
+            }
+        }
+    }
+}
+
+// 服务模块
+.server-box{
+    background-color: #F7F9FA;
+    overflow: hidden;
+    .server{
+        padding-top: 40px;
+        overflow: hidden;
+        // 热门资讯
+        .articles{
+            overflow: hidden;
+            background-color: #ffffff;
+            .articles-title{
+                overflow: hidden;
+                padding: 0 32px;
+                border-bottom: 1px solid #E9ECF0;
+                h4{
+                    font-size: 20px;
+                    line-height: 52px;
+                    font-weight: bold;
+                    color: #232628;
+                }
+                a{
+                    font-size: 14px;
+                    line-height: 52px;
+                    color: #71797F;
+                    float: right;
+                }
+            }
+            .articles-content{
+                padding: 8px 0;
+                .articles-list{
+                    overflow: hidden;
+                    li{
+                        float: left;
+                        position: relative;
+                        width: 400px;
+                        padding-left: 42px;
+                        font-size: 12px;
+                        line-height: 28px;
+                        color: #232628;
+                        &:after{
+                            content: "";
+                            position: absolute;
+                            left: 32px;
+                            top: 12px;
+                            width: 4px;
+                            height: 4px;
+                            border-radius: 50%;
+                            background-color: #B4BABF;
+                        }
+                        a{
+                            color: #232628;
+                            &:hover{
+                                color: #FF734C;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        // 我们的服务
+        .server-list{
+            padding: 20px 0;
+            border-bottom: 1px solid #E9ECF0;
+            overflow: hidden;
+            .my-server-list{
+                li{
+                    float: left;
+                    margin: 20px 0;
+                    font-size: 20px;
+                    line-height: 40px;
+                    a{
+                        color: #232628;
+                        &:hover{
+                            color: #FF734C;
+                        }
+                        span{
+                            width: 40px;
+                            height: 40px;
+                            margin-right: 16px;
+                            display:inline-block;
+                            background: url(../image/common_sprite.png) no-repeat;
+                            vertical-align: top;
+                        }
+                        .icon-hua{background-position: 0 -136px;}
+                        .icon-xs{background-position: -50px -136px;}
+                        .icon-dd{background-position: -100px -136px;}
+                        .icon-bf{background-position: -150px -136px;}
+                        .icon-xl{background-position: -200px -136px;}
+                        .icon-kh{background-position: -250px -136px;}
+                        .icon-bz{background-position: -300px -136px;}
+                        .icon-ss{background-position: -350px -136px;}
+                    }
+                }
+                .ser-a{width: 323px;}
+                .ser-b{width: 360px;}
+                .ser-c{width: 320px;}
+                .ser-d{width: 197px;}
+            }
+        }
+        // 友情链接
+        .more-net{
+            overflow: hidden;
+            padding-top: 36px;
+            padding-bottom: 40px;
+            div{
+                float: left;
+                h4{
+                    font-weight: normal;
+                    font-size: 16px;
+                    line-height: 24px;
+                    color: #232628
+                }
+                ul{
+                    margin-top: 7px;
+                    li{
+                        font-size: 12px;
+                        line-height: 24px;
+                        overflow: hidden;
+                        white-space: nowrap;
+                        text-overflow: ellipsis;
+                        a{
+                            color: #71797F;
+                            &:hover{
+                                color: #FF734C;
+                            }
+                        }
+                    }
+                }
+            }
+            .customer-service{
+                width: 197px;
+                ul li{
+                    float: left;
+                    width: 68px;
+                    
+                }
+            }
+            .popular-information{
+                width: 225px;
+            }
+            .flower-prefecture{
+                width: 197px;
+                ul li{
+                    float: left;
+                    width: 68px;
+                    font-size: 12px;
+                    line-height: 20px;
+                }
+            }
+            .contact-us{
+                width: 259px;
+                .need-help{
+                    margin-top: 9px;
+                    p{
+                        font-size: 12px;
+                        line-height: 20px;
+                        color: #71797F;
+                    }
+                    .call-us{
+                        width: 100px;
+                        height: 32px;
+                        margin-top: 4px;
+                        border-radius: 16px;
+                        background-color: #FF734C;
+                        font-size: 12px;
+                        line-height: 32px;
+                        text-align: center;
+                        a{
+                            color: #fff;
+                            .icon-contact{
+                                width: 20px;
+                                height: 20px;
+                                margin-top: 6px;
+                                margin-right: 6px;
+                                display: inline-block;
+                                background: url(../image/common_sprite.png) no-repeat;
+                                vertical-align: top;
+                                background-position: -330px -72px;
+                            }
+                        }
+                    }
+                }
+            }
+            .qrCode{
+                float: right;
+                div{
+                    text-align: center;
+                    p{
+                        margin-top: 8px;
+                        font-size: 16px;
+                        line-height: 20px;
+                        color: #232628;
+                    }
+                }
+                img{
+                    display: inline-block;
+                    width: 120px;
+                    height: 120px;
+                }
+                .qrCode-wx{margin-left: 48px;}
+            }
+
+        }
+    }
+}
+
+// 尾部
+.footer{
+
+}
+
+// 拉长色块
 .sm{
     width: 100%;
     height: 1000px;
     background-color: #ff6a00;
+    overflow: hidden;
 }
