@@ -17,6 +17,13 @@ task('image', async ()=>{
   .pipe(load.connect.reload())
 })
 
+// 其他文件
+task('other', async ()=>{
+  src('./other/*.*')
+  .pipe(dest('./dist/other'))
+  .pipe(load.connect.reload())
+})
+
 // 处理css
 task('css', async ()=>{
   src('./css/*.css')
@@ -41,6 +48,7 @@ task('html', async ()=>{
 // 监听文件变化
 task('watch',async ()=>{
   watch('./image/*.*',series('image'));
+  watch('./other/*.*',series('other'));
   watch('./css/*.css',series('css'));
   watch('./script/*.js',series('script'));
   watch('./pages/*.html',series('html'));
@@ -56,4 +64,4 @@ task('connect',async ()=>{
 })
 
 // 构建开发包
-task('dev',series('delDist','image','css','script','html','connect','watch'))
+task('dev',series('delDist','image','other','css','script','html','connect','watch'))

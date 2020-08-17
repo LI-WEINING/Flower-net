@@ -1,0 +1,337 @@
+[
+    {
+        "ItemCode": "9012471",
+        "Img":"../image/9012471.jpg",
+        "PageCpmc":"韩式新品",
+        "Activity":"七夕特惠款",
+        "Flanguage":"人间蹉跎，你是唯一值得",
+        
+        "Price": [197],
+        "LinePrice": ["¥245"],
+        "Cpmc": ["你是唯一"],
+        "Instro": ["卡罗拉红玫瑰11枝"],
+        "Property":["11枝新品 一心一意的爱"],
+        "Materials":["卡罗拉红玫瑰11枝、白色满天星3枝、尤加利10枝"],
+        "Sales": ["2239"],
+        "Bigimg":["../image/nswy1.jpg"],
+        "Send":"全国",
+        "Select":[
+            {
+                "simg":"../image/nswy4.jpg",
+                "stitle":"卡罗拉红玫瑰"
+            }
+        ],
+        "Minimg":[["../image/nswy1.jpg","../image/nswy2.jpg","../image/nswy3.jpg","../image/nswy4.jpg"]],
+        "detailsFigure":[
+            [
+                "../image/nswy1-bg.jpg",
+                "../image/nswy2-bg.jpg",
+                "../image/nswy3-bg.jpg",
+                "../image/nswy4-bg.jpg",
+                "../image/nswy5-bg.jpg",
+                "../image/nswy6-bg.jpg",
+                "../image/nswy7-bg.jpg",
+                "../image/nswy8kb-bg.jpg",
+                "../image/nswy9-bg.jpg",
+                "../image/nswy8kb-bg.jpg",
+                "../image/nswy10-bg.jpg",
+                "../image/nswy8kb-bg.jpg",
+                "../image/nswy11-bg.jpg",
+                "../image/nswy8kb-bg.jpg",
+                "../image/nswy12-bg.jpg"
+            ]
+        ]
+    },
+    {
+        "ItemCode": "9012154",
+        "Img":"../image/9012154.jpg",
+        "PageCpmc":"清新设计",
+        "Activity":"马卡龙配色",
+        "Flanguage":"再多一点点距离，我就能靠近你。清晰甜美的空气里，爱你到不能呼吸。",
+        
+        "Price": [535],
+        "LinePrice": ["¥664"],
+        "Cpmc": ["甜美公主"],
+        "Instro": ["白玫瑰22枝，粉佳人粉玫瑰14枝，粉色桔梗5枝"],
+        "Property":["甜美设计 清新典雅"],
+        "Materials":["各色玫瑰共36枝：白玫瑰22枝，粉佳人粉玫瑰14枝；粉色桔梗5枝，尤加利0.5扎"],
+        "Sales": ["2.4万"],
+        "Send":"全国",
+        "Select":[
+            {
+                "simg":"../image/tmgz1.jpg",
+                "stitle":"甜美公主"
+            }
+        ],
+        "Bigimg":["../image/tmgz1.jpg"],
+        "Minimg":[["../image/tmgz1.jpg","../image/tmgz2.jpg","../image/tmgz3.jpg","../image/tmgz4.jpg"]],
+        "detailsFigure":[
+            [
+                "../image/tmgz1-bg.jpg",
+                "../image/tmgz2-bg.jpg",
+                "../image/tmgz3-bg.jpg",
+                "../image/tmgz4-bg.jpg",
+                "../image/tmgz5-bg.jpg",
+                "../image/tmgz6-bg.jpg",
+                "../image/tmgz7-bg.jpg",
+                "../image/tmgz8-bg.jpg",
+                "../image/tmgz9-bg.jpg",
+                "../image/tmgz10-bg.jpg",
+                "../image/tmgz11-bg.jpg",
+                "../image/tmgz2-bg.jpg",
+                "../image/tmgz12-bg.jpg",
+                "../image/tmgz2-bg.jpg",
+                "../image/tmgz13-bg.jpg",
+                "../image/tmgz2-bg.jpg",
+                "../image/tmgz14-bg.jpg",
+                "../image/tmgz2-bg.jpg",
+                "../image/tmgz15-bg.jpg"
+            ]
+        ]
+    },
+    {
+        "ItemCode": "1073186",
+        "Img":"../image/1073186.jpg",
+        "PageCpmc":"迪奥口红",
+        "Activity":"永生花礼盒",
+        "Flanguage":"永生的玫瑰见证永恒的爱",
+        
+        "Price": [598,598,598,360],
+        "LinePrice": ["¥698","¥698","¥698","¥499"],
+        "Cpmc": [
+            "我如此爱你-口红款520",
+            "我如此爱你-口红款999",
+            "我如此爱你-口红款YSL",
+            "给你我的心-美宝莲星钻小灯管空姐色"
+        ],
+        "Instro": [
+            "Dior#520口红(专柜正品)＋进口永生玫瑰礼盒",
+            "专柜正品Dior#999口红＋进口永生玫瑰礼盒",
+            "正品YSL圣罗兰方管口红＋进口永生玫瑰礼盒",
+            "正品美宝莲口红＋进口永生玫瑰礼盒"
+        ],
+        "Property":[
+            "全新升级款带化妆镜",
+            "Dior、YSL口红可选",
+            "全新升级款带化妆镜",
+            "口红#SRD04-空姐色"
+        ],
+        
+        "Materials":[
+            "厄瓜多尔进口永生红玫1朵(直径6-7CM)、红色小玫瑰2朵、进口红色永生玫瑰1朵、红色小果子2颗、进口红绣球适量、进口松树枝适量；搭配专柜正品迪奥Dior#520口红（专属畅销款）。高档蓝色定制多功能礼盒（永生花盒+升级款带化妆镜+带首饰盒功能）。",
+            "厄瓜多尔进口永生红玫1朵(直径6-7CM)、红色小玫瑰2朵、进口红色永生玫瑰1朵、红色小果子2颗、进口红绣球适量、进口松树枝适量；搭配专柜正品畅销经典款迪奥Dior999口红。高档蓝色定制多功能礼盒（永生花盒+升级款带化妆镜+带首饰盒功能）。",
+            "厄瓜多尔进口永生红玫1朵(直径6-7CM)、红色小玫瑰2朵、进口红色永生玫瑰1朵、红色小果子2颗、进口红绣球适量、进口松树枝适量；搭配专柜正品YSL圣罗兰方管口红（色号1#）。高档蓝色定制多功能礼盒（永生花盒+升级款带化妆镜+带首饰盒功能）。",
+            "厄瓜多尔进口永生红玫1朵(直径6-7CM)、红色小玫瑰2朵、进口红色永生玫瑰1朵、红色小果子2颗、进口红绣球适量、进口松树枝适量；搭配专柜正品美宝莲绝色持久纵情耀系列#SRD04空姐色口红（星钻小灯管唇膏，经典莹润，星钻闪耀，饱满鲜活正红色，人气满满！！！）"
+        ],
+        "Sales": ["2134","7107","274","91"],
+        "Send":"顺丰陆运深圳发货, 全国可达, 包邮!",
+        "Select":[
+            {
+                "simg":"../image/1073186.jpg_220x240.jpg",
+                "stitle":"Dior#520口红"
+            },
+            {
+                "simg":"../image/1073186.jpg_220x240.jpg",
+                "stitle":"Dior#999口红"
+            },
+            {
+                "simg":"../image/1073186.jpg_220x240.jpg",
+                "stitle":"YSL圣罗兰口红"
+            },
+            {
+                "simg":"../image/1073240.jpg_220x240.jpg",
+                "stitle":"美宝莲#空姐色"
+            }
+        ],
+        "Bigimg":[
+            ["../image/adkh1.jpg"],
+            ["../image/adkh1.jpg"],
+            ["../image/sll1.jpg"],
+            ["../image/adkha1.jpg"]
+        ],
+        "Minimg":[
+            ["../image/adkh1.jpg","../image/adkh2.jpg","../image/adkh3.jpg","../image/adkh4.jpg"],
+            ["../image/adkh1.jpg","../image/adkh2.jpg","../image/adkh3.jpg","../image/adkh4.jpg"],
+            ["../image/sll1.jpg","../image/sll2.jpg","../image/sll3.jpg","../image/sll4.jpg"],
+            ["../image/adkha1.jpg","../image/adkha2.jpg","../image/adkha3.jpg","../image/adkha4.jpg"]
+            
+        ],
+        "detailsFigure":[
+            [
+                "../image/adkha1-bg.jpg",
+                "../image/adkha2-bg.jpg",
+                "../image/adkha3-bg.jpg",
+                "../image/adkha4-bg.jpg",
+                "../image/adkha5-bg.jpg",
+                "../image/adkha6-bg.jpg",
+                "../image/adkha7-bg.jpg",
+                "../image/adkha8-bg.jpg",
+                "../image/adkha9-bg.jpg",
+                "../image/adkha10-bg.jpg",
+                "../image/adkha11-bg.jpg",
+                "../image/adkha12-bg.jpg",
+                "../image/adkha13-bg.jpg",
+                "../image/adkha14-bg.jpg",
+                "../image/adkha15-bg.jpg"
+            ],
+            [
+                "../image/adkha1-bg.jpg",
+                "../image/adkha2-bg.jpg",
+                "../image/adkha3-bg.jpg",
+                "../image/adkha4-bg.jpg",
+                "../image/adkha5-bg.jpg",
+                "../image/adkha6-bg.jpg",
+                "../image/adkha7-bg.jpg",
+                "../image/adkha8-bg.jpg",
+                "../image/adkha9-bg.jpg",
+                "../image/adkha10-bg.jpg",
+                "../image/adkha11-bg.jpg",
+                "../image/adkha12-bg.jpg",
+                "../image/adkha13-bg.jpg",
+                "../image/adkha14-bg.jpg",
+                "../image/adkha15-bg.jpg"
+            ],
+            [
+                "../image/sll1.jpg",
+                "../image/sll2-bg.jpg",
+                "../image/sll3-bg.jpg",
+                "../image/sll4-bg.jpg",
+                "../image/adkha5-bg.jpg",
+                "../image/adkha6-bg.jpg",
+                "../image/adkha7-bg.jpg",
+                "../image/adkha8-bg.jpg",
+                "../image/adkha9-bg.jpg",
+                "../image/adkha10-bg.jpg",
+                "../image/adkha11-bg.jpg",
+                "../image/adkha12-bg.jpg",
+                "../image/adkha13-bg.jpg",
+                "../image/adkha14-bg.jpg",
+                "../image/adkha15-bg.jpg"
+            ],
+            [
+                "../image/adkh1-bg.jpg",
+                "../image/adkh2-bg.jpg",
+                "../image/adkh3-bg.jpg",
+                "../image/adkh4-bg.jpg",
+                "../image/adkh5-bg.jpg",
+                "../image/adkh6-bg.jpg",
+                "../image/adkh7-bg.jpg",
+                "../image/adkh8-bg.jpg",
+                "../image/adkh9-bg.jpg",
+                "../image/adkh10-bg.jpg",
+                "../image/adkh11-bg.jpg",
+                "../image/adkh12-bg.jpg",
+                "../image/adkh13-bg.jpg",
+                "../image/adkh14-bg.jpg",
+                "../image/adkh15-bg.jpg",
+                "../image/adkh16-bg.jpg"
+            ]
+
+        ]
+    },
+    {
+        "ItemCode": "1076109",
+        "Img":"../image/1076109.jpg",
+        "PageCpmc":"施华洛世奇",
+        "Activity":"心，随你跳动",
+        "Flanguage":"粉嫩爱心 浪漫迷人", 
+        
+        "Price": [1359,1190,1359,1190],
+        "LinePrice": ["¥1690","¥1290","¥1690","¥1290"],
+        "Cpmc": [
+            "施华洛世奇ONE系列爱心项链+耳钉套装/镀玫瑰金色",
+            "施华洛世奇耀动的心SPARKLING DANCE项链/粉色",
+            "施华洛世奇ONE系列爱心项链+耳钉套装/镀玫瑰金色",
+            "施华洛世奇ONE系列爱心项链+耳钉套装/镀玫瑰金色"
+        ],
+        "Instro": [
+            "施华洛世奇粉嫩爱心项链",
+            "施华洛世奇心形项链",
+            "施华洛世奇粉嫩爱心项链",
+            "施华洛世奇粉嫩爱心项链"
+        ],
+        "Property":[
+            "心心相印，爱意满怀",
+            "耀动的心 洋溢着活力气息",
+            "心心相印，爱意满怀",
+            "心心相印，爱意满怀"
+        ],
+        "Materials":[
+            "品牌：施华洛世奇（SWAROVSKI） 商品名称：施华洛世奇 ONE 粉嫩爱心 浪漫迷人 时尚 女耳钉项链套装 镀玫瑰金色 商品毛重：20.00g 材质：其它 链子款式：其它 风格：欧美风，奢华 规格：21-50cm（含）",
+            "品牌: Swarovski/施华洛世奇 链子材质: 合金/镀银/镀金 成色: 全新 适用性别: 女 是否多层: 否 是否带坠: 是 是否商场同款: 是",
+            "品牌：商品名称：施华洛世奇 Swarovski ONE 爱心镶钻项链吊坠女锁骨链耳环套装 心形套装 商品毛重：0.6kg 材质：合金/镀金/镀银 链子款式：其它 风格：欧美风 规格：21-50cm（含）",
+            "品牌: Swarovski/施华洛世奇 链子材质: 合金/镀银/镀金 适用性别: 女 颜色分类: 镀白金色 是否多层: 否 是否带坠: 是 是否商场同款: 是"
+        ],
+        "Sales": ["21","6","5","0"],
+        "Send":"顺丰空运深圳发货, 全国可达, 包邮!",
+        "Select":[
+            {
+                "simg":"../image/1076096.jpg_220x240.jpg",
+                "stitle":"套装/粉色"
+            },
+            {
+                "simg":"../image/1076109.jpg_220x240.jpg",
+                "stitle":"心跳项链/粉色"
+            },
+            {
+                "simg":"../image/1076097.jpg_220x240.jpg",
+                "stitle":"套装/玫红色"
+            },
+            {
+                "simg":"../image/1076108.jpg_220x240.jpg",
+                "stitle":"心跳项链/镀白金色"
+            }
+        ],
+        "Bigimg":[
+            ["../image/shlsq1.jpg"],
+            ["../image/b2.jpg"],
+            ["../image/c3.jpg"],
+            ["../image/d4.jpg"]
+        ],
+        "Minimg":[
+            ["../image/shlsq1.jpg","../image/shlsq2.jpg","../image/shlsq3.jpg","../image/shlsq4.jpg"],
+            ["../image/b1.jpg","../image/b2.jpg","../image/b3.jpg","../image/b4.jpg"],
+            ["../image/c1.jpg","../image/c2.jpg","../image/c3.jpg","../image/c4.jpg"],
+            ["../image/d1.jpg","../image/d2.jpg","../image/d3.jpg","../image/d4.jpg"]
+        ],
+        "detailsFigure":[
+            [
+               "../image/abg1.jpg",
+               "../image/abg2.jpg",
+               "../image/abg3.jpg",
+               "../image/abg4.jpg",
+               "../image/abg5.jpg",
+               "../image/abg6.jpg"
+            ], 
+            [
+                "../image/bbg1.jpg",
+                "../image/bbg2.jpg",
+                "../image/bbg3.jpg",
+                "../image/bbg4.jpg",
+                "../image/bbg5.jpg",
+                "../image/bbg6.jpg",
+                "../image/bbg7.jpg"
+            ],
+            [
+                "../image/cbg1.jpg",
+                "../image/cbg2.jpg",
+                "../image/cbg3.jpg",
+                "../image/cbg4.jpg",
+                "../image/cbg5.jpg",
+                "../image/cbg6.jpg",
+                "../image/cbg7.jpg"
+            ], 
+            [
+                "../image/dbg1.jpg",
+                "../image/dbg2.jpg",
+                "../image/dbg3.jpg",
+                "../image/dbg4.jpg",
+                "../image/dbg5.jpg",
+                "../image/dbg6.jpg",
+                "../image/dbg7.jpg",
+                "../image/dbg8.jpg",
+                "../image/dbg9.jpg"
+            ]
+        ]
+    }
+]

@@ -16,6 +16,13 @@ task('image', async ()=>{
   .pipe(dest('./dist/image'))
 })
 
+// 其他文件
+task('other', async ()=>{
+  src('./other/*.*')
+  .pipe(dest('./dist/other'))
+  .pipe(load.connect.reload())
+})
+
 // 处理css
 task('css', async ()=>{
   src('./css/*.css')
@@ -55,4 +62,4 @@ task('connect',async ()=>{
 })
 
 // 构建生产包
-task('build',series('delDist','image','css','script','html','connect'))
+task('build',series('delDist','image','other','css','script','html','connect'))

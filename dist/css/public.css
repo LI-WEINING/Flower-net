@@ -20,6 +20,6 @@ button{outline: none;}
 .float-l{float: left;}
 .float-r{float: right;}
 .no-wrap{white-space: nowrap; overflow: hidden; text-overflow: ellipsis;} /* 文字溢出省略号 */
-.clear-all::before{content: '';display: block; overflow: hidden;clear: both; height: 0; visibility: hidden;}
+.clear-all:after{content: '';display: block; overflow: hidden;clear: both; height: 0; visibility: hidden;}
 .clear-all{zoom: 1;}
 .type-area{width: 1200px; margin: 0 auto;}
