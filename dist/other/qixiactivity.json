@@ -284,9 +284,9 @@
         ],
         "Bigimg":[
             ["../image/shlsq1.jpg"],
-            ["../image/b2.jpg"],
-            ["../image/c3.jpg"],
-            ["../image/d4.jpg"]
+            ["../image/b1.jpg"],
+            ["../image/c1.jpg"],
+            ["../image/d1.jpg"]
         ],
         "Minimg":[
             ["../image/shlsq1.jpg","../image/shlsq2.jpg","../image/shlsq3.jpg","../image/shlsq4.jpg"],

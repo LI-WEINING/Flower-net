@@ -162,40 +162,19 @@
     });
   })();
 
-// 保障内容------------------------------------------------------------------
-!(function(){
-    var tab_items = document.querySelectorAll('.tab-item');
-    var conImgs = document.querySelectorAll('.conImg');
-    var span_icon = document.querySelectorAll('.tab-item span');
-    var pre = 0;
-    for (let i = 0; i < tab_items.length; i++) {
-        $(tab_items[i]).mouseenter(()=>{
-            $(conImgs[i]).show();
-            $(span_icon[i]).addClass('activeImg');
-            $(span_icon[pre]).removeClass('activeImg');
-            pre = i;
-        });
-        $(tab_items[i]).mouseleave(()=>{
-            if(i == 0){return;}
-            $(conImgs[i]).hide();
-        });
-    }
-})();
-
 // 详情内容导航栏固定顶部------------------------------------------------------------
 !(function(){
-    $(document).ready(function(){
-        // 商品详情
-        var details = $(".mydetails").offset().top;
-        var details_h = details + $(".mydetails").height() - $(".pro-nav1").height();
-        // 用户评价
-        var stimate = $(".myestimate").offset().top;
-        var stimate_h = stimate + $(".myestimate").height()- $(".pro-nav2").height();
-        // 购物保障
-        var safeguard = $(".mysafeguard").offset().top;
-        var safeguard_h = safeguard + $(".mysafeguard").height()- $(".pro-nav3").height();
-
+    window.onload=function(){
         $(document).on("scroll",function(){
+            // 商品详情
+            var details = $(".mydetails").offset().top;
+            var details_h = details + $(".mydetails").height() - $(".pro-nav1").height();
+            // 用户评价
+            var stimate = $(".myestimate").offset().top;
+            var stimate_h = stimate + $(".myestimate").height()- $(".pro-nav2").height();
+            // 购物保障
+            var safeguard = $(".mysafeguard").offset().top;
+            var safeguard_h = safeguard + $(".mysafeguard").height()- $(".pro-nav3").height();
             // 商品详情nav
             if($(document).scrollTop() >= details && $(document).scrollTop() <= details_h) {
                 $(".pro-nav1").css({
@@ -210,7 +189,7 @@
                 $(".pro-nav1-mn").hide();
             }
             // 用户评价nav
-            if($(document).scrollTop() >= stimate  && $(document).scrollTop() <= stimate_h){
+            if($(document).scrollTop() + 5 >= stimate  && $(document).scrollTop() <= stimate_h){
                 $(".pro-nav2").css({
                     "position":"sticky",
                     "top":0,
@@ -224,12 +203,29 @@
                 $(".pro-nav2-mn").hide();
             }
             // 购物保障nav
-            if($(document).scrollTop() >= safeguard  && $(document).scrollTop() <= safeguard_h){
+            if($(document).scrollTop()+ 5 >= safeguard   && $(document).scrollTop() <= safeguard_h){
                 $(".pro-nav3-mn").show();
             }else{
                 $(".pro-nav3-mn").hide();
             }
         });
-    })
+    };
     
+})();
+
+// 保障内容------------------------------------------------------------------
+!(function(){
+    var tab_items = document.querySelectorAll('.tab-item');
+    var conImgs = document.querySelectorAll('.conImg');
+    var span_icon = document.querySelectorAll('.tab-item span');
+    var pre = 0;
+    for (let i = 0; i < tab_items.length; i++) {
+        $(tab_items[i]).mouseenter(()=>{
+            $(conImgs[pre]).hide();
+            $(conImgs[i]).show();
+            $(span_icon[pre]).removeClass('activeImg');
+            $(span_icon[i]).addClass('activeImg');
+            pre = i;
+        });
+    }
 })();
