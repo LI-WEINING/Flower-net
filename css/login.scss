@@ -186,7 +186,6 @@
         }
     }
 }
-
 // 搜索栏
 .seek{
     height: 120px;
@@ -266,7 +265,27 @@
         }
     }
 }
-
+// input 的 placeholder样式
+// 谷歌
+input::-webkit-input-placeholder{
+    color: #B4BABF;
+    font-size: 12px;
+}
+// 火狐
+input::-moz-placeholder{  
+    color: #B4BABF;
+    font-size: 12px;
+}
+// 谷歌
+.search-inp::-webkit-input-placeholder{
+    color: #B4BABF;
+    font-size: 14px;
+}
+// 火狐
+.search-inp::-moz-placeholder{  
+    color: #B4BABF;
+    font-size: 14px;
+}
 // 登入内容
 .login-wrap{
     width: 100%;
@@ -274,4 +293,297 @@
     background: url(../image/login_bg.jpg) no-repeat;
     background-size: cover;
     background-position: 50% 0;
+    .login-box{
+        position: relative;
+        float: right;
+        width: 360px;
+        height: 438px;
+        border-radius: 8px;
+        background: #fff;
+        margin-top: 18px;
+        overflow: hidden;
+        // 选择登入方式
+        .login-title{
+            width: 100%;
+            height: 51px;
+            box-sizing: content-box;
+            border-bottom: 1px solid #E9ECF0;
+            img{
+                position: absolute;
+                right: 0;
+                top: 0;
+                width: 44px;
+                height: 44px;
+            }
+            h3{
+                position: relative;
+                float: left;
+                width: 50%;
+                font-weight: normal;
+                line-height: 56px;
+                font-size: 18px;
+                text-align: center;
+                cursor: pointer;
+                z-index: 2;
+            }
+            .active-log{
+                color: #FF734C;
+            }
+            .active-log::after{
+                content: '';
+                position: absolute;
+                width: 120px;
+                height: 2px;
+                bottom: 0px;
+                left: 30px;
+                top: 50px;
+                background: #FF734C;
+            }
+        }
+        // 登入盒
+        .login-content{
+            position: relative;
+            .form{
+                display: none;
+                position: absolute;
+                width: 312px;
+                box-sizing: content-box;
+                min-height: 280px;
+                padding: 20px 24px 0;
+            }
+            .fo-active{
+                display: block;
+            }
+            // 账号登入框内容
+            .login-zh{
+                .input-box{
+                    position: relative;
+                    width: 100%;
+                    height: 36px;
+                    border: 1px solid #E9ECF0;
+                    border-radius: 2px;
+                }
+                .tip{
+                    height: 18px;
+                    margin: 4px 0;
+                    font-size: 12px;
+                    line-height: 18px;
+                    color: #71797F;
+                    padding:0 10px;
+                    #rememberme{
+                        border: 1px solid #E9ECF0;
+                        height: 13px;
+                        width: 13px;
+                        vertical-align: middle;
+                        cursor: pointer;
+                        margin: 0px 5px 3px 0;
+                    }
+                    label{
+                        cursor: pointer;
+                    }
+                    b{
+                        float: right;
+                        &:hover{
+                            color: #FF734C;
+                            cursor: pointer;
+                        }
+                    }
+                }
+                .tips{
+                    padding-left: 40px;
+                    height: 18px;
+                    margin: 4px 0;
+                    font-size: 12px;
+                    line-height: 18px;
+                    color: #FF734C; 
+                }
+                .login-way{
+                    font-size: 13px;
+                    color: #71797F;
+                    height: 24px;
+                    line-height: 18px;
+                    text-align: right;
+                    .icon-suo{
+                        display: inline-block;
+                        width: 16px;
+                        height: 16px;
+                        margin-top: 2px;
+                        margin-right: 3px;
+                        background: url(../image/pc_icon.png) no-repeat -24px 0;
+                        background-repeat: no-repeat;
+                        vertical-align: top;
+                    }
+                }
+                input{
+                    width: 262px;
+                    height: 34px;
+                    padding: 7px 6px;
+                    vertical-align: top;
+                    font-size: 14px;
+                    line-height: 20px;
+                    border: none;
+                    outline: none;
+                    color: #232628;
+                }
+                .icon-user{
+                    display: block;
+                    float: left;
+                    width: 34px;
+                    height: 34px;
+                    background: url(../image/pc_icon.png) no-repeat -88px -24px;
+                }
+                .icon-pass{
+                    display: block;
+                    float: left;
+                    width: 34px;
+                    height: 34px;
+                    background: url(../image/pc_icon.png) no-repeat -44px -24px;
+                }
+                .gogogo{
+                    display: block;
+                    background: #FF734C;
+                    color: #fff;
+                    width: 100%;
+                    height: 36px;
+                    margin-top: 10px;
+                    border-radius: 24px;
+                    font-size: 16px;
+                    text-align: center;
+                    line-height: 36px;
+                    border: none;
+                    cursor: pointer;
+                    
+                }
+                .fst-log{
+                    margin-top: 12px;
+                    font-size: 13px;
+                    line-height: 18px;
+                    text-align: center;
+                    a{
+                        color: #B4BABF;
+                        &:hover{color: #ff6a00;}
+                        .icon-tip{
+                            display: inline-block;
+                            width: 16px;
+                            height: 16px;
+                            margin-top: 2px;
+                            margin-right: 3px;
+                            background: url(../image/pc_icon.png) no-repeat -47px 0;
+                            vertical-align: top;
+                        }
+                    }
+                }
+            }
+            // 微信登入框内容
+            .login-wx{
+                .saoma-login{
+                    overflow: hidden;
+                    margin-top: 20px;
+                    img{
+                        display: block;
+                        margin:26px auto 0;
+                        width: 150px;
+                        height: 150px;
+                    }
+                    p{
+                        position: relative;
+                        font-size: 14px;
+                        color: #232628;
+                        line-height: 24px;
+                        margin-top: 30px;
+                        text-align: center;
+                        .icon-wenhao{
+                            cursor: pointer;
+                            display: inline-block;
+                            width: 16px;
+                            height: 16px;
+                            margin-right: 3px;
+                            margin-left: 4px;
+                            margin-bottom: 3px;
+                            background: url(../image/pc_icon.png) no-repeat -72px 0;
+                            background-repeat: no-repeat;
+                            vertical-align: middle;
+                        }
+                    }
+                }
+            }
+        }
+        .more-gogog{
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            height: 52px;
+            background: #F7F9FA;
+            line-height: 52px;
+            ul{
+                padding: 0 8px;
+                li{
+                    float: left;
+                    margin: 0 16px;
+                    text-align: center;
+                    line-height: 52px;
+                    height: 52px;
+                    font-size: 12px;
+                    color: #71797F;
+                }
+                .sign-in{
+                    float: right;
+                    a{display: block;
+                        font-size: 14px;
+                        color: #FF734C;
+                    }
+                }
+                span{
+                    display: inline-block;
+                    width: 20px;
+                    height: 20px;
+                    margin-top: 16px;
+                    margin-right: 4px;
+                    background-image: url(../image/pc_icon.png);
+                    background-repeat: no-repeat;
+                    vertical-align: top;
+                }
+                .icon-qq{background-position: -30px -94px;}
+                .icon-zfb{background-position: -60px -94px;}
+                .icon-xiangy{background-position: 0 -66px;}
+            }
+        }
+    }
+}
+// 尾部
+.footer{
+    .footer-nav{
+        font-size: 12px;
+        width: 1200px;
+        margin: 30px auto;
+        text-align: center;
+        li{
+            display: inline-block;
+            color: #737373;
+            margin: 0 32px;
+        }
+        .finally{margin-right: 32px;}
+        .fist{margin-left: 32px;}
+        .bro{
+            margin: 0;
+            color: #d9d9d9;
+        }
+    }
+    .auth{
+        text-align: center;
+        padding-bottom: 20px;
+        img{
+            display: inline-block;
+            margin: 0 5px;
+            .auth-text{
+                text-align: center;
+            }
+        }
+        .auth-text{
+            padding-top: 30px;
+            font-size: 12px;
+            color: #737373;
+        }
+    }
 }

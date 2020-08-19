@@ -1,4 +1,17 @@
-// 获取点击的商品json数据------------------------------------------------------------------
+// 判断是否登入--------------------------------------------------------------------
+if (getCookie('username')) {
+    var  newA = `<a href="#">欢迎您，${getCookie('username')}</a><a href="#" class="quit-user">退出</a>`;
+    $('.login').html(newA);
+  };
+  
+// 退出判断-------------------------------------------------------------------------
+$('.quit-user').click(function(){
+    delCookie('username');
+    delCookie('password');
+    $(location).attr('href', './index.html');
+});
+
+// 获取点击的商品json数据------------------------------------------------------------
 !(function(){
     var url = window.location.href;
     // 判断是否使用服务器，还是本地文件

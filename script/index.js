@@ -1,3 +1,4 @@
+
 // 轮播图-------------------------------------------------------
 var mySwiper = new Swiper ('.swiper-container', {
     direction: 'horizontal', // 水平切换选项
@@ -42,6 +43,22 @@ $('.banner').mouseenter(function(){
 $('.banner').mouseleave(function(){
     $('.swiper-button-box').hide()
 });
+
+
+// 判断是否登入--------------------------------------------------------------------
+if (getCookie('username')) {
+  var  newA = `<a href="#">欢迎您，${getCookie('username')}</a><a href="#" class="quit-user">退出</a>`;
+  $('.login').html(newA);
+};
+
+// 退出判断-------------------------------------------------------------------------
+$('.quit-user').click(function(){
+  delCookie('username');
+  delCookie('password');
+  $(location).attr('href', './index.html');
+});
+
+
 
 // 活动商品json数据------------------------------------------------------------------
 !(function(){

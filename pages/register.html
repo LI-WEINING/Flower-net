@@ -3,13 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>会员登录-花礼网</title>
+    <title>会员注册-花礼网</title>
     <link rel="shortcut icon" href="../image/favicon.ico">
     <link rel="stylesheet" href="../css/public.css">
     <link rel="stylesheet" href="../css/login.css">
     <script src="../script/functionCookie.js"></script>
     <script src="../script/jquery.js" defer></script>
-    <script src="../script/login.js" defer></script>
+    <script src="../script/register.js" defer></script>
 </head>
 <body>
     <!-- 头部 -->
@@ -34,7 +34,7 @@
             <!-- 头部右侧 -->
             <ul class="headNav-r float-r">
                 <li class="LoginInfo">
-                    <a href="#">你好，请登录</a><a href="./register.html">注册</a> 
+                    <a href="./login.html">你好，请登录</a><a href="./signin.html">注册</a> 
                 </li>
                 <li class="nav-bk">|</li>
                 <li><a href="#">订单查询</a></li>
@@ -82,16 +82,15 @@
             <div class="login-box">
                 <!-- 登入方式 -->
                 <div class="login-title">
-                    <h3 class="user-log active-log">账号登录</h3>
-                    <h3 class="weixin-log ">微信扫码登录</h3>
-                    <img src="../image/pc_login_qr.png" alt="">
+                    <h3 class="user-log active-log">账号注册</h3>
+                    <h3 class="weixin-log">邮箱账号注册</h3>
                 </div>
                 <!-- 登入内容 -->
-                <div class="login-content clear-all">
+                <div class="login-content clear-all ">
                     <!-- 账号登入内容 -->
                     <div class="form login-zh clear-all fo-active">
                         <!-- 登入方式提示 -->
-                        <p class="login-way"><span class="icon-suo"></span>账号密码登录</p>
+                        <p class="login-way"><span class="icon-suo"></span>账号密码注册</p>
                         <!-- 用户名称输入框 -->
                         <div class="user-box clear-all">
                             <div class="user-name input-box">
@@ -105,20 +104,11 @@
                         <div class="pass-box clear-all">
                             <div class="user-pass input-box">
                                 <span class="icon-pass"></span>
-                                <input type="password" name="password" id="password" placeholder="请输入密码">
+                                <input type="text" name="password" id="password" placeholder="请输入密码">
                             </div>
                             <p class="pass-tips tips"></p>
-                            <p class="tip"><input type="checkbox" name="rememberpass" id="rememberme"><label for="rememberme">记住密码</label><b>忘记密码</b></p>
                         </div>
-                        <button class="gogogo" type="button">登录</button>
-                        <p class="fst-log"> <a href="./register.html"><span class="icon-tip"></span>首次登录创建新账号</a></p>
-                    </div>
-                    <!-- 微信登入内容 -->
-                    <div class="form login-wx clear-all">
-                        <div class="saoma-login">
-                            <img src="../image/saoma.png" alt="">
-                            <p>微信扫码 快速登录 <b class="icon-wenhao"></b> </p>
-                        </div>
+                        <button class="gogogo" type="submit">注册</button>
                     </div>
                 </div>
                 <!-- 更多登入方式 -->
@@ -126,7 +116,7 @@
                     <ul class="clear-all">
                         <li class="qq-login"><span class="icon-qq"></span>QQ</li>
                         <li class="zfb-login"><span class="icon-zfb"></span>支付宝</li>
-                        <li class="sign-in"><a href="./register.html">注册账号<span class="icon-xiangy"></span></a></li>
+                        <li class="sign-in"><a href="./login.html">登入账号<span class="icon-xiangy"></span></a></li>
                     </ul>
                 </div>
             </div>
