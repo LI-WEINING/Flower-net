@@ -1,15 +1,14 @@
 // 判断是否登入--------------------------------------------------------------------
-if (getCookie('username')) {
-    var  newA = `<a href="#">欢迎您，${getCookie('username')}</a><a href="#" class="quit-user">退出</a>`;
+if (localStorage.getItem('user')) {
+    var  newA = `<a href="#">欢迎您，${localStorage.getItem('user')}</a><a href="#" class="quit-user">退出</a>`;
     $('.login').html(newA);
   };
   
-// 退出判断-------------------------------------------------------------------------
-$('.quit-user').click(function(){
-    delCookie('username');
-    delCookie('password');
+  // 退出判断-------------------------------------------------------------------------
+  $('.quit-user').click(function(){
+    localStorage.clear();
     $(location).attr('href', './index.html');
-});
+  });
 
 // 获取点击的商品json数据------------------------------------------------------------
 !(function(){

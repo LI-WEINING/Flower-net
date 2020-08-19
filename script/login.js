@@ -14,6 +14,17 @@
     })
 })();
 
+
+
+// 判断是有否保存密码-------------------------------------------
+if(getCookie('username')){
+    $("#username").val(getCookie('username'));
+}
+if(getCookie('password')){
+    $("#password").val(getCookie('password'));
+    $('#rememberme').prop('checked',true);
+}
+
 // 实现网页登入成功跳转首页---------------------------------------
 $(".gogogo").click(function(){
     $.ajax({
@@ -35,6 +46,7 @@ $(".gogogo").click(function(){
                         val: $("#username").val(),
                         days:7
                     })
+                    localStorage.setItem('user',$("#username").val());
                     setCookie({
                         key: 'password',
                         val: $("#password").val(),
@@ -46,6 +58,7 @@ $(".gogogo").click(function(){
                         val: $("#username").val(),
                         days:1
                     })
+                    localStorage.setItem('user',$("#username").val());
                     delCookie('password');
                 }
                 $(location).attr('href', './index.html');
