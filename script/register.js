@@ -24,8 +24,10 @@
         var chinese = new RegExp("[\\u4E00-\\u9FFF]+","g");
         if(/\s/.test($('#password').val())){
             $('.pass-tips').text('输入不能含有空格');
+            flag2=0;
         }else if(chinese.test($('#password').val())){
             $('.pass-tips').text('输入不能含有中文');
+            flag2=0;
         }else{
             // 密码强求判断
             var strongRegex = new RegExp("^(?=.{8,})(?=.*[A-Z])(?=.*[a-z])(?=.*[0-9])(?=.*\\W).*$", "g");
@@ -35,6 +37,7 @@
             $('.pass-tips').text('请输入大于6位数的密码');
             }else if($("#username").val() == $("#password").val()){
                 $('.pass-tips').text('密码不能与账号相同');
+                flag2=0;
             }else if (strongRegex.test($('#password').val())) {
                 $('.pass-tips').text('强');
                 flag2=1;
